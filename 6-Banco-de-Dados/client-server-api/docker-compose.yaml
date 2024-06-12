@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  server:
+    build: .
+    container_name: go-server
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./cotacoes.db:/app/cotacoes.db
+    # Executa o container como root
+    user: root
