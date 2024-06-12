@@ -118,3 +118,5 @@ func main() {
 	fmt.Println("Server is running at", serverAddress)
 	log.Fatal(http.ListenAndServe(serverAddress, nil))
 }
+
+// TESTE COMMIT
